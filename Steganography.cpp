@@ -7,7 +7,7 @@ using namespace std;
 Steganography::Steganography()
     : magicNumber(""), width(0), height(0), maxColor(255) {}
 
-// Helper method to get the nth bit from a character
+// Helper method to get the nth bit from a character. 
 int Steganography::getNthBit(char cipherChar, int n) const {
     return (cipherChar >> n) & 1;
 }
